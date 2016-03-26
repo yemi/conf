@@ -10,42 +10,76 @@
       ./hardware-configuration.nix
     ];
 
-  # Use the gummiboot efi boot loader.
-  boot.loader.gummiboot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  nixpkgs.config = {
+    allowUnfree = true;
 
-  # Kernel modules
-  boot.kernelModules = ["applesmc"];
+    firefox = {
+      enableGoogleTalkPlugin = true;
+      enableAdobeFlash = true;
+    };
+
+    chromium = {
+      enablePepperFlash = true;
+      enablePepperPDF = true;
+    };
+  };
+
+  # Booting
+  boot.loader = {
+    gummiboot.enable = true;
+    efi.canTouchEfiVariables = true;
+  };
 
   # networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
-  nixpkgs.config.allowUnfree = true;
-
-  # Internationalisation properties
+  # Internationalisation
   i18n = {
     consoleFont = "Lat2-Terminus16";
     consoleKeyMap = "us";
     defaultLocale = "en_US.UTF-8";
   };
 
-  # Time zone
+  # Time
   time.timeZone = "Europe/Amsterdam";
 
-  # Installed packages in system profile. To search by name, run:
-  # $ nix-env -qaP | grep wget
+  # System packages
   environment.systemPackages = with pkgs; [
-    zsh
+    # System
     wget
-    firefox
-    chromium
-    emacs
+    zsh
     git
-    weechat
+    tmux
+    silver-searcher
+
+    # Compiler
     gcc
-    ghc
+
+    # Converters
+    npm2nix
+
+    # Web
+    chromium
+    firefox
+
+    # Editor
+    vim
+    emacs
+
+    # Social/chat
+    weechat
+
+    # Media
+    vlc
+
+    # Experiment
+    syncthing
+    dropbox
     stack
+    terminator
   ];
+
+  programs.zsh.enable = true;
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
@@ -53,30 +87,46 @@
   # Enable CUPS to print documents.
   # services.printing.enable = true;
 
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-  services.xserver.layout = "us";
-  services.xserver.xkbOptions = "eurosign:e";
-
-  # Video drivers
-  services.xserver.videoDrivers = ["noveau"];
-
   # GUI
-  services.xserver.desktopManager.gnome3.enable = true;
-  services.xserver.windowManager.xmonad.enable = true;
+  services.xserver = {
+    enable = true;
+    layout = "us";
+    xkbOptions = "eurosign:e";
 
-  # Enable touchpad
-  services.xserver.synaptics.enable = true;
-  services.xserver.synaptics.twoFingerScroll = true;
+    desktopManager = {
+      gnome3.enable = true;
+    };
+
+    windowManager = {
+      default = "xmonad";
+      xmonad.enable = true;
+    };
+
+    multitouch = {
+      enable = true;
+      invertScroll = true;
+    };
+
+    synaptics = {
+      enable = true;
+      twoFingerScroll = true;
+    };
+
+    videoDrivers = [ "noveau" ];
+  };
+
+  # Users
+  users.extraUsers.yemi = 
+    { description = "Yemi";
+      isNormalUser = true;
+      group = "users";
+      uid = 1000;
+      extraGroups = [ "wheel" "networkmanager" ];
+      home = "/home/yemi";
+      shell = "/run/current-system/sw/bin/zsh";
+    };
 
   # The NixOS release to be compatible with for stateful data such as databases.
   system.stateVersion = "15.09";
 
-  # User management
-  users.extraUsers.yemi =
-    { isNormalUser = true;      
-      home = "/home/yemi";
-      extraGroups = ["wheel" "networkmanager"];
-      description = "Yemi Tabaniz";
-    };
 }
