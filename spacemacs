@@ -23,20 +23,33 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     auto-completion
-     better-defaults
-     emacs-lisp
-     osx
-     haskell
-     purescript
-     rust
-     git
+
+     ;; GUI
+     colors
+
+     ;; Language
      html
      markdown
      c-c++
-     ;; color
-     ;; python
-     ;; org
+     emacs-lisp
+     haskell
+     purescript
+     ;; javascript - replace jshint with eslint before usage
+     rust
+
+     ;; Misc
+     auto-completion
+     better-defaults
+
+     ;; OS
+     osx
+
+     ;; Search
+     search-engine
+
+     ;; Tools
+     git
+
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
@@ -53,7 +66,7 @@ values."
      emmet-mode
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
-   dotspacemacs-excluded-packages '(company)
+   dotspacemacs-excluded-packages '()
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
    ;; are declared in a layer which is not a member of
    ;; the list `dotspacemacs-configuration-layers'. (default t)
@@ -255,6 +268,7 @@ in `dotspacemacs/user-config'."
   "Configuration function for user code.
 This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
+  ;; (require 'flycheck)
 
   ;; Auto completion
   (global-company-mode)
@@ -263,7 +277,13 @@ layers configuration. You are free to put any user code."
   (setq neo-theme 'nerd)
 
   ;; Javascript
-  (setq-default js2-basic-offset 2)
+  ;; (setq js2-basic-offset 2)
+  (setq js-indent-level 2)
+  ;; (setq flycheck-checkers '(javascript-eslint))
+  ;; (setq flycheck-eslintrc)
+  ;; (setq-default flycheck-disabled-checkers
+  ;;   (append flycheck-disabled-checkers
+  ;;     '(javascript-jshint)))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
@@ -273,7 +293,7 @@ layers configuration. You are free to put any user code."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(js-indent-level 2))
+ )
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
