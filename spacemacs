@@ -64,6 +64,7 @@ values."
    dotspacemacs-additional-packages
    '(stylus-mode
      emmet-mode
+     fish-mode
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()

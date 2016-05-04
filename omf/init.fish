@@ -1,2 +1,6 @@
 set PATH $HOME/.local/bin $PATH
-set PATH $HOME/.nvm $PATH
+
+function nvm
+  bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv
+end
+
