@@ -32,7 +32,7 @@ values."
      markdown
      c-c++
      emacs-lisp
-     haskell
+     (haskell :variables haskell-enable-hindent-style "johan-tibell")
      purescript
      ;; javascript - replace jshint with eslint before usage
      rust
