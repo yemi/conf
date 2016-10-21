@@ -1,9 +1,13 @@
+set -gx EDITOR /usr/local/bin/emacs
+
+# Stack
 set PATH "$HOME/.local/bin" $PATH
 
-# This is so that ghc-mod can find ghc when its only installed with stack
-set PATH "$HOME/.stack/programs/x86_64-osx/ghc-7.10.3/bin" $PATH
-
+# Node.js
 function nvm
   bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv
 end
+
+# Virtual fish
+eval (python -m virtualfish)
 

@@ -32,10 +32,17 @@ values."
      markdown
      c-c++
      emacs-lisp
-     (haskell :variables haskell-enable-hindent-style "johan-tibell")
+     (haskell :variables
+              haskell-enable-hindent-style "johan-tibell"
+              haskell-completion-backend 'intero)
      purescript
-     ;; javascript - replace jshint with eslint before usage
+     javascript ;; - replace jshint with eslint before usage
      rust
+     scheme
+     python
+
+     ;; Framework
+     django
 
      ;; Misc
      auto-completion
@@ -50,11 +57,15 @@ values."
      ;; Tools
      git
 
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
+     ;; Syntax
+     syntax-checking
+
+     ;; Shell
+     (shell :variables
+            shell-default-height 30
+            shell-default-position 'bottom)
+
      ;; spell-checking
-     ;; syntax-checking
      ;; version-control
      )
    ;; List of additional packages that will be installed without being
