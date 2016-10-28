@@ -40,6 +40,8 @@ values."
      rust
      scheme
      python
+     yaml
+     php
 
      ;; Framework
      django
