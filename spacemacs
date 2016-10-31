@@ -58,6 +58,7 @@ values."
 
      ;; Tools
      git
+     docker
 
      ;; Syntax
      syntax-checking
