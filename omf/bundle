@@ -1,2 +1,3 @@
+package direnv
 package virtualfish
 theme nai
