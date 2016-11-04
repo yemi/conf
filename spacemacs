@@ -42,6 +42,7 @@ values."
      python
      yaml
      php
+     elixir
 
      ;; Framework
      django
@@ -286,7 +287,7 @@ layers configuration. You are free to put any user code."
   ;; (require 'flycheck)
 
   ;; Auto completion
-  (global-company-mode)
+  (global-auto-complete-mode)
 
   ;; File Tree
   (setq neo-theme 'nerd)
