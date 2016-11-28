@@ -43,6 +43,7 @@ values."
      yaml
      php
      elixir
+     erlang
 
      ;; Framework
      django
