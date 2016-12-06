@@ -40,10 +40,11 @@ values."
      rust
      scheme
      python
-     yaml
      php
+     yaml
      elixir
      erlang
+     sql
 
      ;; Framework
      django
@@ -294,8 +295,9 @@ layers configuration. You are free to put any user code."
   (setq neo-theme 'nerd)
 
   ;; Javascript
-  ;; (setq js2-basic-offset 2)
+  (setq js2-basic-offset 2)
   (setq js-indent-level 2)
+
   ;; (setq flycheck-checkers '(javascript-eslint))
   ;; (setq flycheck-eslintrc)
   ;; (setq-default flycheck-disabled-checkers
