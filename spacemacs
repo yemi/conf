@@ -37,7 +37,7 @@ values."
               haskell-enable-hindent-style "johan-tibell"
               haskell-completion-backend 'intero)
      purescript
-     javascript ;; - replace jshint with eslint before usage
+     javascript
      rust
      scheme
      python
@@ -46,6 +46,7 @@ values."
      elixir
      erlang
      sql
+     ruby
 
      ;; Framework
      django
@@ -150,7 +151,7 @@ values."
                                :size 13
                                :weight normal
                                :width normal
-                               :powerline-scale 1.1)
+                               :powerline-scale 1.2)
    ;; The leader key
    dotspacemacs-leader-key "SPC"
    ;; The leader key accessible in `emacs state' and `insert state'
@@ -295,12 +296,6 @@ layers configuration. You are free to put any user code."
   ;; Javascript
   (setq js2-basic-offset 2)
   (setq js-indent-level 2)
-
-  ;; (setq flycheck-checkers '(javascript-eslint))
-  ;; (setq flycheck-eslintrc)
-  ;; (setq-default flycheck-disabled-checkers
-  ;;   (append flycheck-disabled-checkers
-  ;;     '(javascript-jshint)))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
