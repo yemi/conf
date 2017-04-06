@@ -25,20 +25,17 @@ values."
      ;; ----------------------------------------------------------------
 
      ;; GUI
-     colors
      themes-megapack
 
      ;; Language
      html
      markdown
-     c-c++
      emacs-lisp
      (haskell :variables
               haskell-enable-hindent-style "johan-tibell"
               haskell-completion-backend 'intero)
      purescript
      javascript
-     rust
      scheme
      python
      php
@@ -46,14 +43,13 @@ values."
      elixir
      erlang
      sql
-     ruby
 
      ;; Framework
      django
 
      ;; Misc
-     auto-completion
-     better-defaults
+     (auto-completion :variables
+                      auto-completion-enable-help-tooltip t)
 
      ;; OS
      osx
@@ -63,12 +59,15 @@ values."
 
      ;; Tools
      git
+     github
      docker
+     ansible
 
      ;; Syntax
      syntax-checking
 
      ;; Shell
+     shell-scripts
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
@@ -82,9 +81,7 @@ values."
    ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages
    '(stylus-mode
-     emmet-mode
-     fish-mode
-     )
+    )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
@@ -285,10 +282,9 @@ in `dotspacemacs/user-config'."
   "Configuration function for user code.
 This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
-  ;; (require 'flycheck)
 
   ;; Auto completion
-  (global-auto-complete-mode)
+  (global-company-mode)
 
   ;; File Tree
   (setq neo-theme 'nerd)
@@ -311,4 +307,8 @@ layers configuration. You are free to put any user code."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(company-tooltip-common
+   ((t (:inherit company-tooltip :weight bold :underline nil))))
+ '(company-tooltip-common-selection
+   ((t (:inherit company-tooltip-selection :weight bold :underline nil))))
  )
