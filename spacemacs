@@ -40,6 +40,7 @@ values."
      python
      php
      yaml
+     elm
      elixir
      erlang
      sql
