@@ -11,5 +11,7 @@ set PATH "$HOME/.local/bin" $PATH
 abbr -a dc docker-compose
 abbr -a gp git pull
 
+alias cp="rsync -ah --inplace --info=progress2"
+
 # Android
 set PATH "$HOME/Library/Android/sdk/platform-tools/" $PATH
