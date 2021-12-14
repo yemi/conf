@@ -200,7 +200,7 @@ exec_always --no-startup-id xset r rate 150 90
 
 # Gaps
 # See: https://gist.github.com/boreycutts/6417980039760d9d9dac0dd2148d4783#configuring
-gaps inner 15
+gaps inner 0
 for_window [class="^.*"] border pixel 0
 
 # Background
