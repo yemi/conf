@@ -17,5 +17,4 @@ for flatpakdir in ~/.local/share/flatpak/exports/bin /var/lib/flatpak/exports/bi
 end
 
 if status is-interactive
-    # Commands to run in interactive sessions can go here
 end
