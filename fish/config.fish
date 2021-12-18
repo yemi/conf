@@ -17,4 +17,6 @@ for flatpakdir in ~/.local/share/flatpak/exports/bin /var/lib/flatpak/exports/bi
 end
 
 if status is-interactive
+  # Yarn
+  fish_add_path (yarn global bin)
 end
