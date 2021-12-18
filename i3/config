@@ -199,7 +199,8 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id $HOME/polybar-collection/themes/minimal/launch.sh
 
 # Set default keyboard layouts
-exec --no-startup-id setxkbmap us,se -option 'grp:shifts_toggle'
+# See: https://gist.github.com/jatcwang/ae3b7019f219b8cdc6798329108c9aee
+exec_always --no-startup-id setxkbmap us,se -option 'grp:shifts_toggle' -option "ctrl:swapcaps" -option "caps:none"
 
 # Keyboard delay
 exec_always --no-startup-id xset r rate 150 90
