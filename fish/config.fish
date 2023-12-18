@@ -16,7 +16,30 @@ for flatpakdir in ~/.local/share/flatpak/exports/bin /var/lib/flatpak/exports/bi
     end
 end
 
+# Start X at login
+if status is-login
+    if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
+        exec startx -- -keeptty
+    end
+end
+
 if status is-interactive
   # Yarn
   fish_add_path (yarn global bin)
+
+  # Default browser
+  set -Ux BROWSER /usr/bin/firefox
+
+  # Vim mode
+  fish_vi_key_bindings
+
+  # Alias
+  alias dc "docker-compose"
+
+  # K8s
+  alias k8sdev "kubectl config use-context arn:aws:eks:eu-west-1:529272700247:cluster/development"
+  alias k8sprod "kubectl config use-context arn:aws:eks:eu-west-1:979078630284:cluster/meetball-main-prod"
+  alias pods "kubectl -n app get pods"
+  alias logs "kubectl -n app logs"
+  alias describe "kubectl -n app describe pod"
 end
