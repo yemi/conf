@@ -23,6 +23,8 @@ if status is-login
     end
 end
 
+status --is-interactive; and rbenv init - fish | source
+
 if status is-interactive
   # Yarn
   fish_add_path (yarn global bin)
