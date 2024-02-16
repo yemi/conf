@@ -1,0 +1,97 @@
+{
+  "window.menuBarVisibility": "toggle",
+  "sync.gist": "",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": 500,
+  "terminal.integrated.fontWeight": 500,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.lineNumbers": "relative",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Tokyo Night Storm",
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.tabSize": 2,
+  "editor.fontSize": 12,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.suggest.preview": true,
+  "workbench.editor.enablePreviewFromCodeNavigation": true,
+  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "diffEditor.wordWrap": "off",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "emmet.showAbbreviationSuggestions": false,
+  "emmet.showExpandedAbbreviation": "never",
+  "files.associations": {
+    "*.ts__template__": "html"
+  },
+  "[html]": {
+    "editor.formatOnSave": false
+  },
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock",
+    "*": "${basename}.*.${extname}"
+  },
+  "editor.multiCursorModifier": "ctrlCmd",
+  "terminal.integrated.scrollback": 100000,
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "editor.stickyScroll.enabled": true,
+  "git.autofetch": true,
+  "[nix]": {
+    "editor.defaultFormatter": "jnoortheen.nix-ide"
+  },
+  "emojisense.languages": {
+    "typescript": true,
+    "typescriptreact": true,
+    "markdown": true,
+    "plaintext": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "scminput": true,
+    "git-commit": true
+  },
+  "editor.lineHeight": 1.7,
+  "[v]": {
+    "editor.insertSpaces": false
+  },
+  "v.vls.enable": true,
+  "nxConsole.showNodeVersionOnStartup": false,
+  "[c]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+  "editor.wordWrapColumn": 100,
+  "vim.textwidth": 100,
+  "breadcrumbs.symbolPath": "off",
+  "breadcrumbs.icons": false,
+  "editor.minimap.enabled": false,
+  "workbench.activityBar.location": "hidden",
+  "window.zoomLevel": -1
+}

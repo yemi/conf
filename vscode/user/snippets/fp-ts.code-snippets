@@ -1,0 +1,151 @@
+{
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"scope": "javascript,typescript",
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+  "Import Option": {
+    // "scope": "javascript,typescript,tsx",
+    "prefix": "+o",
+    "body": ["import * as Option from 'effect/Option'"],
+    "description": "Import Option from effect"
+  },
+  "Import Either": {
+    // "scope": "javascript,typescript,tsx",
+    "prefix": "+e",
+    "body": ["import * as E from 'fp-ts/lib/Either';"],
+    "description": "Import Either from fp-ts"
+  },
+  "Import Decoder": {
+    // "scope": "javascript,typescript,tsx",
+    "prefix": "+d",
+    "body": ["import * as D from 'io-ts/lib/Decoder';"],
+    "description": "Import Decoder from io-ts"
+  },
+  "Import TaskEither": {
+    // "scope": "javascript,typescript,tsx",
+    "prefix": "+te",
+    "body": ["import * as TE from 'fp-ts/lib/TaskEither';"],
+    "description": "Import TaskEither from fp-ts"
+  },
+  "Import ReaderTaskEither": {
+    // "scope": "javascript,typescript,tsx",
+    "prefix": "+rte",
+    "body": ["import * as RTE from 'fp-ts/lib/ReaderTaskEither';"],
+    "description": "Import ReaderTaskEither from fp-ts"
+  },
+  "Import Array": {
+    // "scope": "javascript,typescript,tsx",
+    "prefix": "+a",
+    "body": ["import * as ReadonlyArray from 'effect/ReadonlyArray';"],
+    "description": "Import Array from fp-ts"
+  },
+  "Import NonEmptyArray": {
+    // "scope": "javascript,typescript,tsx",
+    "prefix": "+nea",
+    "body": ["import * as NEA from 'fp-ts/lib/NonEmptyArray';"],
+    "description": "Import NonEmptyArray from fp-ts"
+  },
+  "Import Apply": {
+    // "scope": "javascript,typescript,tsx",
+    "prefix": "+ap",
+    "body": ["import * as AP from 'fp-ts/lib/Apply';"],
+    "description": "Import Apply from fp-ts"
+  },
+  "Import Record": {
+    // "scope": "javascript,typescript,tsx",
+    "prefix": "+r",
+    "body": ["import * as R from 'fp-ts/lib/Record';"],
+    "description": "Import Record from fp-ts"
+  },
+  "Import State": {
+    // "scope": "javascript,typescript,tsx",
+    "prefix": "+s",
+    "body": ["import * as S from 'fp-ts/lib/State';"],
+    "description": "Import State from fp-ts"
+  },
+  "Import pipe": {
+    // "scope": "javascript,typescript,tsx",
+    "prefix": "+pi",
+    "body": ["import {pipe} from 'fp-ts/lib/function';"],
+    "description": "Import pipe from fp-ts"
+  }
+
+  // "Import Option": {
+  //   // "scope": "javascript,typescript,tsx",
+  //   "prefix": "+o",
+  //   "body": ["import * as Option from 'fp-ts/lib/Option';"],
+  //   "description": "Import Option from fp-ts"
+  // },
+  // "Import Either": {
+  //   // "scope": "javascript,typescript,tsx",
+  //   "prefix": "+e",
+  //   "body": ["import * as E from 'fp-ts/lib/Either';"],
+  //   "description": "Import Either from fp-ts"
+  // },
+  // "Import Decoder": {
+  //   // "scope": "javascript,typescript,tsx",
+  //   "prefix": "+d",
+  //   "body": ["import * as D from 'io-ts/lib/Decoder';"],
+  //   "description": "Import Decoder from io-ts"
+  // },
+  // "Import TaskEither": {
+  //   // "scope": "javascript,typescript,tsx",
+  //   "prefix": "+te",
+  //   "body": ["import * as TE from 'fp-ts/lib/TaskEither';"],
+  //   "description": "Import TaskEither from fp-ts"
+  // },
+  // "Import ReaderTaskEither": {
+  //   // "scope": "javascript,typescript,tsx",
+  //   "prefix": "+rte",
+  //   "body": ["import * as RTE from 'fp-ts/lib/ReaderTaskEither';"],
+  //   "description": "Import ReaderTaskEither from fp-ts"
+  // },
+  // "Import Array": {
+  //   // "scope": "javascript,typescript,tsx",
+  //   "prefix": "+a",
+  //   "body": ["import * as A from 'fp-ts/lib/Array';"],
+  //   "description": "Import Array from fp-ts"
+  // },
+  // "Import NonEmptyArray": {
+  //   // "scope": "javascript,typescript,tsx",
+  //   "prefix": "+nea",
+  //   "body": ["import * as NEA from 'fp-ts/lib/NonEmptyArray';"],
+  //   "description": "Import NonEmptyArray from fp-ts"
+  // },
+  // "Import Apply": {
+  //   // "scope": "javascript,typescript,tsx",
+  //   "prefix": "+ap",
+  //   "body": ["import * as AP from 'fp-ts/lib/Apply';"],
+  //   "description": "Import Apply from fp-ts"
+  // },
+  // "Import Record": {
+  //   // "scope": "javascript,typescript,tsx",
+  //   "prefix": "+r",
+  //   "body": ["import * as R from 'fp-ts/lib/Record';"],
+  //   "description": "Import Record from fp-ts"
+  // },
+  // "Import State": {
+  //   // "scope": "javascript,typescript,tsx",
+  //   "prefix": "+s",
+  //   "body": ["import * as S from 'fp-ts/lib/State';"],
+  //   "description": "Import State from fp-ts"
+  // },
+  // "Import pipe": {
+  //   // "scope": "javascript,typescript,tsx",
+  //   "prefix": "+pi",
+  //   "body": ["import {pipe} from 'fp-ts/lib/function';"],
+  //   "description": "Import pipe from fp-ts"
+  // }
+}

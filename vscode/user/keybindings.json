@@ -1,0 +1,388 @@
+// Place your key bindings in this file to override the defaults
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+cmd+j",
+    "command": "extension.vscode-git-automator.addAndCommitAllFiles"
+  },
+  {
+    "key": "shift+cmd+a",
+    "command": "-extension.vscode-git-automator.addAndCommitAllFiles"
+  },
+  {
+    "key": "ctrl+cmd+k",
+    "command": "extension.vscode-git-automator.addAndCommitCurrentFile"
+  },
+  {
+    "key": "shift+cmd+z",
+    "command": "-extension.vscode-git-automator.addAndCommitCurrentFile"
+  },
+  {
+    "key": "ctrl+cmd+l",
+    "command": "extension.vscode-git-automator.pushLocalCommits"
+  },
+  {
+    "key": "shift+cmd+x",
+    "command": "-extension.vscode-git-automator.pushLocalCommits"
+  },
+  {
+    "key": "ctrl+cmd+h",
+    "command": "git.checkout"
+  },
+  {
+    "key": "ctrl+cmd+s",
+    "command": "git.branch"
+  },
+  {
+    "key": "[IntlBackslash]",
+    "command": "extension.vim_escape",
+    "when": "editorTextFocus && vim.active && !inDebugRepl"
+  },
+  {
+    "key": "escape",
+    "command": "-extension.vim_escape",
+    "when": "editorTextFocus && vim.active && !inDebugRepl"
+  },
+  {
+    "key": "space w",
+    "command": "extension.vim_ctrl+w",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && vim.use<C-w> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-extension.vim_ctrl+w",
+    "when": "editorTextFocus && vim.active && vim.use<C-w> && !inDebugRepl"
+  },
+  {
+    "key": "space b",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' ",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "cmd+p",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' ",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "space k",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' ",
+    "command": "git.openChange"
+  },
+  {
+    "key": "meta+l",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+cmd+right",
+    "command": "-workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "meta+h",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+cmd+up",
+    "command": "-workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "meta+k",
+    "command": "workbench.action.terminal.focusNext"
+  },
+  {
+    "key": "meta+j",
+    "command": "workbench.action.terminal.focusPrevious"
+  },
+  {
+    "key": "meta+c",
+    "command": "workbench.action.terminal.newInActiveWorkspace"
+  },
+  {
+    "key": "meta+d",
+    "command": "workbench.action.terminal.kill"
+  },
+  {
+    "key": "meta+/",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+\\",
+    "command": "-workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+5",
+    "command": "-workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "space s",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' ",
+    "command": "workbench.view.extension.chatActivityViewSlack"
+  },
+  {
+    "key": "space shift+l",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' ",
+    "command": "workbench.action.maximizeEditor"
+  },
+  {
+    "key": "space shift+h",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' ",
+    "command": "workbench.action.evenEditorWidths"
+  },
+  {
+    "key": "alt+o",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "ctrl+cmd+a",
+    "command": "merge-conflict.accept.all-current"
+  },
+  {
+    "key": "ctrl+cmd+s",
+    "command": "merge-conflict.accept.incoming"
+  },
+  {
+    "key": "ctrl+oem_102",
+    "command": "workbench.action.switchWindow"
+  },
+  {
+    "key": "space e",
+    "command": "editor.action.showHover",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' "
+  },
+  {
+    "key": "ctrl+k ctrl+i",
+    "command": "-editor.action.showHover",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "space g",
+    "command": "editor.action.revealDefinition",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' "
+  },
+  {
+    "key": "f12",
+    "command": "-editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "space r",
+    "command": "editor.action.rename",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' "
+  },
+  {
+    "key": "f2",
+    "command": "-editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "space c",
+    "command": "workbench.action.closeOtherEditors",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' "
+  },
+  {
+    "key": "shift+space l",
+    "command": "workbench.action.moveEditorToRightGroup",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' "
+  },
+  {
+    "key": "shift+space h",
+    "command": "workbench.action.moveEditorToLeftGroup",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' "
+  },
+  {
+    "key": "shift+[IntlBackslash]",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "-workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "shift+cmd+t",
+    "command": "timeline.focus"
+  },
+  {
+    "key": "shift+meta+e",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
+    "key": "shift+cmd+'",
+    "command": "test-explorer.focus"
+  },
+  {
+    "key": "backspace s",
+    "command": "test-explorer.disable-autorun",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' "
+  },
+  {
+    "key": "backspace a",
+    "command": "test-explorer.enable-autorun",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' "
+  },
+  {
+    "key": "backspace backspace",
+    "command": "test-explorer.run-file",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' "
+  },
+  {
+    "key": "backspace =",
+    "command": "test-explorer.run-test-at-cursor",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+  },
+  {
+    "key": "backspace shift+backspace",
+    "command": "test-explorer.run-all",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' "
+  },
+  {
+    "key": "tab tab",
+    "command": "editor.debug.action.toggleBreakpoint",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+  },
+  {
+    "key": "f9",
+    "command": "-editor.debug.action.toggleBreakpoint",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "backspace d",
+    "command": "test-explorer.debug-test-at-cursor",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' "
+  },
+  {
+    "key": "tab l",
+    "command": "workbench.action.debug.continue",
+    "when": "inDebugMode && !focusedSessionIsAttach && editorTextFocus && vim.active && vim.mode != 'Insert' "
+  },
+  {
+    "key": "f5",
+    "command": "-workbench.action.debug.continue",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "shift+space n",
+    "command": "editor.action.marker.next",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' "
+  },
+  {
+    "key": "alt+f8",
+    "command": "-editor.action.marker.next",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+space shift+n",
+    "command": "editor.action.marker.prev",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' "
+  },
+  {
+    "key": "shift+alt+f8",
+    "command": "-editor.action.marker.prev",
+    "when": "editorFocus"
+  },
+  {
+    "key": "space f",
+    "command": "editor.action.referenceSearch.trigger",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' "
+  },
+  {
+    "key": "shift+meta+j",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+pageup",
+    "command": "-workbench.action.previousEditor"
+  },
+  {
+    "key": "shift+meta+k",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+pagedown",
+    "command": "-workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "deleteAllRight",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "dockerContainers.focus",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "tab space",
+    "command": "extension.debugJest",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+  },
+  {
+    "key": "tab r",
+    "command": "workbench.action.debug.restart",
+    "when": "inDebugMode && !focusedSessionIsAttach && editorTextFocus && vim.active && vim.mode != 'Insert' "
+  },
+  {
+    "key": "ctrl+shift+f5",
+    "command": "-workbench.action.debug.restart",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "space d",
+    "command": "editor.debug.action.showDebugHover",
+    "when": "editorTextFocus && inDebugMode"
+  },
+  {
+    "key": "ctrl+k ctrl+i",
+    "command": "-editor.debug.action.showDebugHover",
+    "when": "editorTextFocus && inDebugMode"
+  },
+  {
+    "key": "tab q",
+    "command": "workbench.action.debug.stop",
+    "when": "inDebugMode && !focusedSessionIsAttach && editorTextFocus && vim.active && vim.mode != 'Insert' "
+  },
+  {
+    "key": "shift+f5",
+    "command": "-workbench.action.debug.stop",
+    "when": "inDebugMode && !focusedSessionIsAttach"
+  },
+  {
+    "key": "backspace space",
+    "command": "extension.runJest",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' "
+  },
+  {
+    "key": "backspace backspace",
+    "command": "extension.runJestFile",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' "
+  },
+  {
+    "key": "space o",
+    "command": "workbench.action.gotoSymbol",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' "
+  },
+  {
+    "key": "ctrl+shift+o",
+    "command": "-workbench.action.gotoSymbol"
+  },
+  {
+    "key": "space j",
+    "command": "editor.toggleFold",
+    "when": "editorTextFocus && foldingEnabled && vim.active && vim.mode != 'Insert'"
+  },
+  {
+    "key": "ctrl+k ctrl+l",
+    "command": "-editor.toggleFold",
+    "when": "editorTextFocus && foldingEnabled"
+  }
+]
